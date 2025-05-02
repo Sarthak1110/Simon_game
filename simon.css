@@ -1,0 +1,92 @@
+/* Body styling with soft background */
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+    background-image: url("cry-of-fear-simon-henriksson-hd-wallpaper-preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* optional: makes it stay in place while scrolling */
+    color: #fff; /* for better text contrast */
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: red;
+    margin-bottom: 2rem;
+}
+
+/* Button container */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Each row of buttons */
+.line-one,
+.line-two {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Button base styling */
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Soft pastel button colors */
+.red {
+    background-color: #f28b82; /* soft red */
+}
+
+.green {
+    background-color: #81c995; /* soft green */
+}
+
+.yellow {
+    background-color: #fff475; /* soft yellow */
+    color: #333;
+}
+
+.purple {
+    background-color: #b39ddb; /* soft purple */
+}
+
+/* Flash effects */
+.flash {
+    background-color: #ffffff !important;
+    box-shadow: 0 0 20px #fff;
+}
+
+.user-flash {
+    background-color: #000 !important;
+}
+
+/* Hover effect */
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
